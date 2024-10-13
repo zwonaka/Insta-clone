@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaio Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <section id="firebase-auth-container">
+<!-- email: outlok waalaa, password: aik dow tin chaar paanch chaar cheh.. -->
+    </section>
+    <section id="main-app">
+
+
+    <nav>
+        <div class="inner-nav">
+            <img class="logo"
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" alt="">
+            <div>
+                <input class="search-input" type="text" placeholder="Search">
+                <button id="search-btn">search</button>
+            </div>
+            <div class="navbar-icons">
+                <div>
+                    <div class="">
+                        <a href="/" tabindex="0"><svg aria-label="Home" class="_8-yf5" fill="#262626" height="22"
+                                viewBox="0 0 48 48" width="22">
+                                <path
+                                    d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="margin-left">
+                    <a class="xWeGp" href="/direct/inbox/" tabindex="0"><svg aria-label="Direct" class="_8-yf5"
+                            fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg></a>
+                    <div class="_2g5Gx"></div>
+                </div>
+                <div class="margin-left">
+                    <a href="/explore/" tabindex="0"><svg aria-label="Find People" class="_8-yf5" fill="#262626"
+                            height="22" viewBox="0 0 48 48" width="22">
+                            <path clip-rule="evenodd"
+                                d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+                                fill-rule="evenodd"></path>
+                        </svg></a>
+                </div>
+                <div class="margin-left">
+                    <a class="_0ZPOP kIKUG" href="/accounts/activity/"><svg aria-label="Activity Feed" class="_8-yf5"
+                            fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg></a>
+                    <div class="">
+                        <div class="poA5q" style="margin-left: -423px"></div>
+                    </div>
+                </div>
+
+                
+                <div class="margin-left">
+                    <img class="profile-pic" alt="profile picture" data-testid="user-avatar" draggable="false"
+                        src="./assets/IMG-20220225-WA0037.jpg"/>
+                </div>
+            </div>
+            <div>
+
+                <div>
+                    <button id="show-create-modal" type="button" class="btn btn-sm" style="background-color: white; color: #007bff; border: 1px solid #007bff; margin-right: 5px;">
+                        Create Post
+                    </button>
+
+                    <button id="logout-btn" type="button" class="btn btn-sm" style="background-color: white; color: #dc3545; border: 1px solid #dc3545;">
+                        Logout
+                    </button>
+
+                </div>
+
+                
+
+        </div>
+
+
+   
+    </nav>
+
+
+        <main>
+             <div class="main-container">
+                <div class="content-container">
+                    <div class="content">
+                        <div class="stories">
+                            <div class="stories-inner">
+                                <div class="story">
+                                    <img class ="story-image" src="./assets/9f4e2a90de5746208995cb6def2626dd.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Minister</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/10f5bdba1ee94b67863f8f2ede94beb9.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Zucky</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/images_(21)_(2).jpeg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">SHIB</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/86e43cee7df0498d8671d27bdb3c5252.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">kiddo</span>   
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/86edc38375ad3e750e6dde1fa484462e.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Motor</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/215ed1a3712c424194e19315a45bbdbe.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Trendz</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/a54a6064ea074412913bbca9640c10ca.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Vino</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/a47177d28bf54a98af40412e322cc3ca.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">Happy</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/IMG_20230620_163618.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">cute</span>
+                                </div>
+                                <div class="story">
+                                    <img class ="story-image"src="./assets/nike-air-force-1-yellow-AH0287-103-3-1000x702.jpg">
+                                    <div class="story-border"></div>
+                                    <span class="story-text">AIR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+              
+                    <div class="post-header">
+                        <p>a</p>
+                    </div>
+                    <div><img src="https://m.media-amazon.com/images/I/610EksXe52L._SX466_.jpg" alt=""></div>
+                    <div class="caption">
+                        <p>caption</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Post</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <div class="modal-body">
+                          
+                            <form>
+                                <div class="form-group mb-4">
+                                  <label for="username" class="form-label"> 
+                                    <i class="bi bi-person-fill"></i> User Name
+                                  </label>
+                                  <input type="text" class="form-control shadow-sm p-2" id="username" placeholder="Enter your name">
+                                </div>
+                              
+                                <div class="form-group mb-4">
+                                  <label for="imagelink" class="form-label">
+                                    <i class="bi bi-link-45deg"></i> Image Link
+                                  </label>
+                                  <input type="text" class="form-control shadow-sm p-2" id="imagelink" placeholder="Paste image URL">
+                                </div>
+                              
+                                <div class="form-group mb-4">
+                                  <label for="caption" class="form-label">
+                                    <i class="bi bi-chat-text-fill"></i> Caption
+                                  </label>
+                                  <textarea class="form-control shadow-sm p-2" id="caption" rows="3" placeholder="Write a caption"></textarea>
+                                </div>
+                              </form>
+                              
+                              <!-- Bootstrap icons CDN for icons -->
+                              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+                              
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm" style="background-color: white; color: #6c757d; border: 1px solid #6c757d; margin-right: 5px;" data-bs-dismiss="modal">Close</button>
+                        <button id="create-post-btn" type="button" class="btn btn-sm" style="background-color: white; color: #007bff; border: 1px solid #007bff; margin-right: 5px;">Create Post</button>
+                        <button id="edit-post-btn" type="button" class="btn btn-sm" style="background-color: white; color: #007bff; border: 1px solid #007bff;">Edit Post</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+
+
+                apiKey: "AIzaSyBqMGdnONfTcbifIUXhDweEagp0auAvh3Q",
+            authDomain: "insta-zaio.firebaseapp.com",
+            projectId: "insta-zaio",
+            storageBucket: "insta-zaio.appspot.com",
+            messagingSenderId: "860117594106",
+            appId: "1:860117594106:web:250c03b3b9253ccb20be43"
+
+
+
+                
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            console.log(db)
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+
+    <!--
+
+
+
+
+-->
+</body>
+</html>
